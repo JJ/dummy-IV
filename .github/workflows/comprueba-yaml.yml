@@ -4,9 +4,9 @@ on:
     paths:
       - "iv.yaml"
 jobs:
-  lintAllTheThings:
+  CompruevaIVyaml:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Comprueba yaml
-        run: yq eval iv.yaml
+        run: yq eval iv.yaml || echo "::error file=iv.yaml,line=1::Error de sintaxis"

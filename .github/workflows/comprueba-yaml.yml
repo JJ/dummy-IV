@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Comprueba yaml
-        run: yq eval iv.yaml || echo "::error file=iv.yaml,line=1::Error de sintaxis"
+        run: yq eval iv.yaml || echo "::error file=iv.yaml,line=1::Error de sintaxis" && exit 1

@@ -1,0 +1,12 @@
+name: Comprueba YAML
+on:
+  push:
+    paths:
+      - "iv.yaml"
+jobs:
+  lintAllTheThings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprueba yaml
+        run: yq eval iv.yaml

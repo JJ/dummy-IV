@@ -7,4 +7,3 @@ cuantos hay en cada fase, fechas de entrega, y demás.
 
 A continuación se enlaza la configuración.
 
-Hablamos de una aplicación.
